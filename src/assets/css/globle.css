@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+}
+
+/* border-box全局继承 */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* li无点 */
+ul,
+li {
+    list-style: none;
+}
+
+/* a标签初始化 */
+a {
+    color: #212121;
+    transition: color .3s;
+    background-color: transparent;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+/* 去掉Vue路由标签发光 */
+.router-link-active {
+    text-shadow: none !important;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
+/* 全局鼠标滑过蓝光过渡 */
+.hover-blue:hover,
+.hover-blue:hover span,
+.hover-blue:hover p,
+.hover-blue:hover a {
+    color: #00a1d6 !important;
+    transition: color .3s !important;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+
+body,
+input,
+textarea {
+    font-family: Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
